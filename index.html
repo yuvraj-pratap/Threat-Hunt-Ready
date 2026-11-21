@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Scenario-based cybersecurity awareness and introductory threat hunting training.">
+<title>Threat Hunt Ready</title><link rel="stylesheet" href="style.css"></head>
+<body><header><div class="logo">TH</div><div><p class="eyebrow">SECURITY AWARENESS LAB</p><h1>Threat Hunt Ready</h1><p class="muted">Notice the signal. Verify the context. Report safely.</p></div></header>
+<main class="container">
+<section id="intro" class="panel"><p class="eyebrow">INTERACTIVE TRAINING · 10 SCENARIOS</p><h2>Could you spot the warning signs?</h2>
+<p>Practise safe responses to realistic workplace situations involving suspicious messages, account activity, endpoints and data movement.</p>
+<div class="facts"><div><b>Audience</b><span>Employees + IT staff</span></div><div><b>Level</b><span>Awareness + introductory hunting</span></div><div><b>Time</b><span>8–12 minutes</span></div></div>
+<p class="notice"><b>Safety rule:</b> Use approved reporting and incident-response procedures. Do not investigate beyond your authorization, open suspicious files, or share sensitive logs publicly.</p><button id="start" class="primary">Start training →</button></section>
+<section id="quiz" class="panel hidden" aria-live="polite"><div class="top"><span id="counter" class="eyebrow"></span><span id="score" class="muted">Score: 0</span></div><div class="track"><div id="progress"></div></div>
+<div class="tags"><span id="category" class="tag"></span><span id="level" class="tag alt"></span></div><h2 id="title"></h2><p id="scenario" class="scenario"></p><h3 id="prompt"></h3>
+<form id="form"><fieldset id="options"><legend class="sr">Choose one answer</legend></fieldset><div class="actions"><button id="submit" class="primary" disabled>Check answer</button><button id="next" type="button" class="secondary hidden">Next scenario →</button></div></form>
+<div id="feedback" class="feedback hidden" role="status"><h3 id="feedbackTitle"></h3><p id="why"></p><div class="takeaway"><b>KEY TAKEAWAY</b><p id="takeaway"></p></div></div></section>
+<section id="results" class="panel hidden" aria-live="polite"><p class="eyebrow">TRAINING COMPLETE</p><h2 id="resultTitle">Your results</h2><p id="summary"></p><p class="bigscore"><b id="finalScore"></b> correct answers</p><p id="guidance" class="notice"></p><div class="actions"><button id="reviewBtn" class="primary">Review answers</button><button id="restart" class="secondary">Try again</button></div><p class="muted smalltext">Your score is calculated in this browser and is not sent to a server.</p></section>
+<section id="review" class="panel hidden"><div class="top"><h2>Scenario recap</h2><button id="back" class="secondary">Back to results</button></div><div id="reviewList"></div></section>
+</main><footer><b>Threat Hunt Ready</b> · Educational demonstration project<p>General guidance only; follow your organization's policies and incident-response plan.</p></footer><script src="script.js"></script></body></html>
